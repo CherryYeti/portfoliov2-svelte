@@ -1,0 +1,69 @@
+<script>
+	/**
+	 * @type {string}
+	 */
+	export let link;
+	/**
+	 * @type {string}
+	 */
+	export let img;
+	/**
+	 * @type {string}
+	 */
+	export let name;
+	/**
+	 * @type {string}
+	 */
+	export let description;
+</script>
+
+<a href={link} target="_blank" rel="noreferrer">
+	<div class="card">
+		<img src={img} alt="" />
+		<div class="text">
+			<h2 class="projectTitle">{name}</h2>
+			<p>{description}</p>
+		</div>
+	</div>
+</a>
+
+<style>
+	.card {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		transition: 0.3s;
+		border-radius: 5px;
+		background-color: #0000004d;
+	}
+	.card:hover {
+		box-shadow: 5px 5px 5px 5px #0000008f;
+		cursor: pointer;
+	}
+	a:link,
+	a:visited,
+	a:hover,
+	a:active {
+		text-decoration: none;
+	}
+	img {
+		width: 100%;
+		border-radius: 5px 5px 0 0;
+	}
+	.text {
+		padding: 20px;
+	}
+
+	.projectTitle {
+		text-decoration: none;
+		color: #ce0e67;
+		position: relative;
+		margin-bottom: 5px;
+	}
+	.projectTitle::before {
+		content: '';
+		width: 30%;
+		height: 2px;
+		background-color: #ce0e67;
+		position: absolute;
+		left: 0px;
+	}
+</style>

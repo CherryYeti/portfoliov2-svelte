@@ -1,0 +1,18 @@
+<footer>
+	&copy;{new Date().getFullYear()} Jason Javandel
+</footer>
+
+<style>
+	footer {
+		position: relative;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: auto;
+		width: 100%;
+		padding-top: 40px;
+		color: #fff;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+</style>
