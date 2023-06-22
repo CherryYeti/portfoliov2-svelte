@@ -15,7 +15,7 @@
 
 <style>
 	.app {
-		background-image: url('background.jpg');
+		background-image: url('/background.jpg');
 		min-width: 100%;
 		min-height: 100%;
 		background-size: cover;
